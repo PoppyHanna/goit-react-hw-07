@@ -5,6 +5,7 @@ import { selectError, selectLoading } from "./redux/contactsSlice";
 import ContactForm from "./components/form/ContactForm";
 import SearchBox from "./components/search/SearchBox";
 import ContactList from "./components/list/ContactList";
+import css from "./App.module.css";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -16,8 +17,8 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Phonebook</h1>
+    <div className={css.container}>
+      <h1 className={css.title}>Phonebook</h1>
       <ContactForm />
       <SearchBox />
       {loading && <p>Loading contacts...</p>}

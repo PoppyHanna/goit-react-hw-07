@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  flex: 1 1 200px; /* Розтягнення/звуження в межах 200px */
+  max-width: 300px; /* Максимальна ширина карточки */
+  box-sizing: border-box;
+  padding: 15px;
+  border: 3px solid;
+  border-radius: 5px;
+}
